@@ -14,10 +14,11 @@ el paquete, el TTL es, en realidad, un contador de saltos. Cuando el TTL de un p
 el enrutador devuelve al equipo de origen un mensaje ICMP de "Tiempo agotado".
 
 ---
-Router(config)#hostname RouterA /*cambiar el nombre de un router*
----
+*Router(config)#hostname RouterA /*cambia el nombre de un router*
+*Router#show running-config /*Muestra Configuración del router*
 
-## Realización de red y direccionamiento estatico y dinamico.
+
+## Realización de red; direccionamiento estatico y dinamico.
 
 * Router>enable   / *Ingresa a modo privilegiado*
 * Router# config term /*Ingresa a modo configuracion*
@@ -34,9 +35,21 @@ Router(config)#hostname RouterA /*cambiar el nombre de un router*
 * Router(config-if)#clockrate 64000 /*Tasa de transmisión* 
 
 ---
+* RouterA#show ip interface brief /*Muestra el estado de cada interfaz*
 * Router#show ip route    /*Muestra tabla de enrutamiento*
-
-* 
 
 #### Enrutamiento estático
 * Router(config)#ip route <dir ip red> <máscara de subred> <interfaz de salida | siguiente salto> 
+  
+#### Enrutamiento dinámico
+* Router(config)#router rip
+* Router(config-router)#network <dir ip red>
+* Router(config_router)#ver 2
+  
+## ACL (Lista de control de acceso)
+* Router(config-if)#ip access-group 1 {número de la lista| nombre de la lista} {in|out} /*creación estadar de una ACL*
+... opciones
+  * Router(config)#access-list {número de la lista| nombre de la lista} {permit|deny} host <dir ip>
+  * Router(config)#access-list {número de la lista| nombre de la lista} {permit|deny} any
+  * Router(config)#access-list {número de la lista| nombre de la lista} {permit|deny} <dir red>
+  
