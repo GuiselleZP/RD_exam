@@ -14,19 +14,20 @@ el paquete, el TTL es, en realidad, un contador de saltos. Cuando el TTL de un p
 el enrutador devuelve al equipo de origen un mensaje ICMP de "Tiempo agotado".
 
 ---
-*Router(config)#hostname RouterA /*cambia el nombre de un router*
-*Router#show running-config /*Muestra Configuración del router*
+
+1. Router(config)#hostname RouterA / *cambia el nombre de un router*
+1. Router#show running-config / *Muestra Configuración del router*
 
 
 ## Realización de red; direccionamiento estatico y dinamico.
 
 * Router>enable   / *Ingresa a modo privilegiado*
-* Router# config term /*Ingresa a modo configuracion*
-* Router(config)# interface FastEthernet 0/0/0    /*Configuración interfaz puerto **ethernet***
-* Router(config-if)#ip add <ip red> <mask> /*Asignación IP*
-* Router(config-if)#no shutdown /*Activación interfaz*
+* Router# config term / *Ingresa a modo configuracion*
+* Router(config)# interface FastEthernet 0/0/0    / *Configuración interfaz puerto **ethernet***
+* Router(config-if)#ip add <ip red> <mask> / *Asignación IP*
+* Router(config-if)#no shutdown / *Activación interfaz*
 * Router(config-if)#^z
-* Router#copy run start  /*Guarda cambios*
+* Router#copy run start  / *Guarda cambios*
 
 ---
 

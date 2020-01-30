@@ -10,11 +10,8 @@ solcionar este problema, la **Organización Internacional para la Normalización
 **Uso de las capas para analizar problemas en un flujo de materiales**
 
 El empleo de capas permite perfeccionar el recibimiento y envío de información
-ya que cada una de estas tienen un objetivo específico. La siguientes imagenes
-ilustran como un análisi en capas nos permite reconocer los componentes que
-intervienen en un diferente proceso.
+ya que cada una de estas tienen un objetivo específico.
 
-![Análisis de la red en capas](./images/I00.png){ width=35% }\
 ![Comparación de redes](./images/I01.png){ width=45% }\
 
 ## Origen, Destino y paquetes de datos
@@ -25,10 +22,12 @@ información* lógicamente agrupada.
 ## Medios
 Un medio es el material a través del cual viajan los paquetes de datos. Puede
 ser:
+
 * Cables telefónicos
 * UTP de categoría 5 (Ethernet 10BASE-T)
 * cable coaxial (TV por cable)
 * Fibra óptica
+
 Otros medios menos evidentes son la atmosfera que transporta ondas de radio,
 microondas y luz.
 
@@ -61,6 +60,7 @@ y comprender como viaja la información a través de la red.
 
 En el modelo OSI, hay **7 capas** numeradas, donde cada una cumle una función
 específica. Las ventajas de la división en capas son:
+
 * Divide la comunicación de red en partes más pequeñas y sencillas.
 * Normaliza los componentes de red para permitir el desarrollo y el soporte de
 los productos de diferentes fabricantes.
@@ -74,8 +74,6 @@ sí.
 El problema de trasladar información entre computadores se divide en 7 problemas
 más pequeños y de tratamiento más simple en el modelo de referencia. Cada
 problema está representado por su propia capa en el modelo.
-
-![Las 7 capas OSI](./images/I02.png){ width=40% }\
 
 ### Capa 7: La capa de aplicación
 
@@ -136,19 +134,6 @@ Los datos deben empaquetarce ea través de un proceso denominado encapsulamiento
 El encapsulamiento **rodea los datos con la información de protocolo necesaria**
 antes que se una al tránsito de la red. A medida que los datos se desplazan a
 través de las capas del modelo OSI, reciben encabezados.
-
-**Ejemplo**
-
-![Ejemplo de encapsulamiento](./images/I03.png){ width=40% }\
-
-1. **Crear los datos**.
-1. **Empaquetar los datos para ser transportado de extremo a extremo:** Se 
-asegura que los host se comunique de manera confiable.
-1. **Anexar la dirección de red al encabezado:** Direcciones de origen y 
-destino.
-1. **Anexar la dirección local al encabezado de enlace de datos:** Permite
-conectarce al proximo dispositivo de red conectado al enlace.
-1. **Realizar la conversión a bits para su transmisión**
 
 ## Nombres de los datos en cada capa del modelo OSI
 
@@ -240,6 +225,7 @@ del protocolo OSI, aunque este se usa como **guía**.
 
 Aunque los protocolos TCP/IP representan los estándares en base a los cuales
 se ha desarrollado internet, el modelo OSI es importante porque:
+
 * Es un estándar mundial, genérico, independiente de los protocolos.
 * Es más detallado, lo que hace que sea más útil para enseñanza y aprendizaje.
 * Al ser más detallado, resulta más útil para el diagnóstico de fallas.
