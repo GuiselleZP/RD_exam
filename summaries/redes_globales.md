@@ -7,6 +7,9 @@
  
 ## ICMP
 
+El Protocolo de Mensajes de Control de intemet proporciona una comunicación extranornal 
+entre ruteadores y anfitriones; es una parte integral y obligatoria del IP. El ICMP incluye mensajes de *disminución de tasa* al origen que retardan la velocidad de transmisión, mensajes de *redireccionamiento* que pueden utilizar los anfitriones cambiar su mesa de enrutado, y mensajes de *"echo request/reply"* que los anfitriones para determinar si Se puede accesar un destiño, Un mensaje ICMP viaja en el área de datos de un datagrama IP y tiene tres campos de longitud fija al comienzo del mensaje : el campo type , un campo code y el campo ICMP checksum (suma de verificación). El tipo de mensaje determina el formato del :resto del mensaje, así como su significado.
+
 ## Encaminamiento RIPv2
 
 ## Direccionamiento
@@ -23,5 +26,8 @@ Definida una dirección IP, se puede determinar su tipo según los tres bits de 
 
 ![](./images/11.PNG)
 
+La mayor desventaja del esquema de direccionamiento IP es que si una máquina tiene muchas direcciones, saber una dirección no será suficiente para alcanzarla cuando no exista un camino, hacia la interfaz especificada (por ejemplo, si una red en particular no está disponible). 
+Para permitir el intercambio de datos binarios entre los protocolos TCP/IP se requiere del ordenamiento estándar de octetos para los enteros dentro de los campos del protocolo. Un anfitrión debe convertir todos los dalos binarios de su. forma, interna a un orden estándar de Octetos de red antes de enviar un paquete y debe hacer conversión de orden de octeto de red al orden 
+temo cuando reciba paquetes. 
 
 
